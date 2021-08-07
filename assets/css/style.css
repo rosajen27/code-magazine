@@ -92,7 +92,7 @@ nav a:link:last-child {
 }
 
 .container {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -133,6 +133,7 @@ article header p {
 
 article {
     margin-bottom: 60px;
+    width: 825px;
 }
 
 ul, ol {
@@ -159,7 +160,7 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   padding: 50px 0;
-  width: 500px;
+  width: 300px;
 }
 
 .related-author {
@@ -201,4 +202,17 @@ a:visited {
 a:hover {
   color: orangered;
   text-decoration: underline orangered;
+}
+
+/* layout floats */
+article {
+    float: left;
+}
+
+aside {
+    float: right;
+}
+
+footer {
+    clear: both;
 }
