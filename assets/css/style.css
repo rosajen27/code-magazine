@@ -106,6 +106,17 @@ nav a:link:last-child {
   font-size: 18px;
 }
 
+.author {
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.author-img {
+    float: left;
+    margin-bottom: 20px;
+}
+
 article header p {
   font-style: italic;
 }
