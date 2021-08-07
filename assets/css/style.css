@@ -21,6 +21,7 @@ h1 {
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
 }
 
 h1::first-letter {
@@ -68,6 +69,15 @@ p {
 
 nav {
   font-size: 18px;
+  float: right;
+}
+
+/*clear fix hack for nav h1 & links */
+.clearfix::after {
+    clear: both;
+    content: "";
+    /* clearing float only happen with block elements*/
+    display: block;
 }
 
 /* inline-block looks like inline from the outside, behaves like block-level on the inside */
