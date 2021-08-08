@@ -1,57 +1,190 @@
-.el--1 {
-  background-color: blueviolet;
-  align-self: flex-start;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.el--2 {
-  background-color: orangered;
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #1098ad;
+  /* button element positioned relative to body */
+  position: relative;
 }
-.el--3 {
-  background-color: green;
-  height: 150px;
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
-.el--4 {
-  background-color: goldenrod;
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
 }
-.el--5 {
-  background-color: palevioletred;
-  align-self: stretch;
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
 }
-.el--6 {
-  background-color: steelblue;
-  order: -1;
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
 }
-.el--7 {
-  background-color: yellow;
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  display: inline-block;
+  padding: 5px 10px;
+  /* position relative to h2 block */
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }
-.el--8 {
-  background-color: crimson;
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+/* inline-block looks like inline from the outside, behaves like block-level on the inside */
+nav a:link {
+  margin-right: 30px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 .container {
-  font-family: sans-serif;
-  background-color: #ddd;
-  font-size: 34px;
-  margin: 40px;
-
-  /* FLEXBOX */
-  display: flex;
-
-  /* vertically align items */
-  align-items: center;
-  /*horizontally align items */
-  justify-content: center;
-
-  /* manually space elements */
-  gap: 30px;
-
-  /* evenly space elements*/
-  /* justify-content: space-between; */
-
-
-  /* position elements at the top or bottom */
-  /* align-items: flex-start; */
-  /* align-items: flex-end; */
-
-  /* stretch as tall as the tallest element */
-  /* align-items: stretch; */
+  width: 1200px;
+  margin: 0 auto;
 }
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+/* when using percentages, width of the img will be the size of the parent container */
+.post-img {
+  width: 100%;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+article header p {
+  font-style: italic;
+}
+
+article {
+  margin-bottom: 60px;
+  width: 825px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 40px;
+  width: 300px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+#copyright {
+  font-size: 18px;
+}
+
+/* by default, absolute positioning is relative to the viewport */
+/* in order to have button positioned relative to body, add position: relative to body element */
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* styling links */
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  text-decoration: underline orangered;
+}
+
+/* FLEXBOX */

@@ -2,45 +2,123 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/flexbox.css">
-  <title>Flexbox</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/flexbox.css">
+    <title>The Basic Language of the Web: HTML | FLEXBOX LAYOUT</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="el el--1">and</div>
-    <div class="el el--2">CSS</div>
-    <div class="el el--3">are</div>
-    <div class="el el--4">amazing</div>
-    <div class="el el--5">languages</div>
-    <div class="el el--6">HTML</div>
-    <div class="el el--7">to</div>
-    <div class="el el--8">learn</div>
-  </div>
+    <div class="container">
+        <header class="main-header clearfix">
+            <h1>📘 The Code Magazine</h1>
+
+            <nav>
+                <a href="#">Blog</a>
+                <a href="#">Challenges</a>
+                <a href="./flexbox.html">Flexbox</a>
+                <a href="./css-grid.html">CSS Grid</a>
+            </nav>
+        </header>
+
+        <article>
+            <header class="post-header">
+                <h2>The Basic Language of the Web: HTML</h2>
+
+                <img src="./assets/img/laura-jones.jpg" alt="headshot of Laura Jones" height="50" width="50"
+                    class="author-img">
+
+                <p id="author" class="author">
+                    Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+                </p>
+
+                <img src="./assets/img/post-img.jpg" alt="HTML code on a screen" class="post-img">
+            </header>
+
+            <p>
+                All modern websites and web applications are built using three <em>fundamental</em> technologies: HTML,
+                CSS
+                and
+                JavaScript. These are the languages of the web.
+            </p>
+
+            <p>
+                In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn
+                it.
+            </p>
+
+            <h3>What is HTML?</h3>
+
+            <p>
+                HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup
+                <strong>L</strong>anguage.
+                It's a markup language that web developers use to structure and describe the content of a webpage (not a
+                programming language).
+            </p>
+
+            <p>
+                HTML consists of elements that describe different types of content: paragraphs, links, headings, images,
+                video,
+                etc. Web browsers understand HTML and render HTML code as websites.
+            </p>
+
+            <p>
+                In HTML, each element is made up of 3 parts:
+            </p>
+
+            <ol>
+                <li>The opening tag</li>
+                <li>The closing tag</li>
+                <li>The actual element</li>
+            </ol>
+
+            <p>You can learn more at the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a>.
+            </p>
+
+            <h3>Why should you learn HTML?</h3>
+
+            <p>
+                There are countless reasons for learning the fundamental language of the web. Here are 5 of them:
+            </p>
+
+            <ul>
+                <li>To be able to use the fundamental web dev language</li>
+                <li>To hand-craft beautiful websites instead of relying on tools like Worpress or Wix</li>
+                <li>To build web applications</li>
+                <li>To impress friends</li>
+                <li>To have fun 😃</li>
+            </ul>
+
+            <p>
+                Hopefully you learned something new here. See you next time!
+            </p>
+        </article>
+
+        <aside>
+            <h4>Related posts</h4>
+            <ul class="related">
+                <li>
+                    <img src="./assets/img/related-1.jpg" height="75" width="75">
+                    <a href="#">How to Learn Web Development</a>
+                    <p class="related-author">By Jonas Schmedtmann</p>
+                </li>
+                <li>
+                    <img src="./assets/img/related-2.jpg" height="75" width="75">
+                    <a href="#">The Unknown Powers of CSS</a>
+                    <p class="related-author">By Jim Dillon</p>
+                </li>
+                <li>
+                    <img src="./assets/img/related-3.jpg" height="75" width="75">
+                    <a href="#">Why JavaScript is Awesome</a>
+                    <p class="related-author">By Matilda Smith</p>
+                </li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p id="copyright">Copyright &copy; 2021 by The Code Magazine.</p>
+        </footer>
+        <button>❤ Like</button>
+    </div>
 </body>
 
 </html>
-
-<!--
-  What is Flexbox? 
-  Flexbox
-  Flexbox is a set of related CSS properties for building 1-dimensional layouts.
-  The main idea behind flexbox is that empty space inside a container element can be automatically divided by its child elements.
-  Flexbox makes it easy to automatically align items to one another inside a parent container, both horizontally and vertically.
-  Flexbox solves common problems such as vertical centering and creating equal-height columns.
-  Flexbox is perfect for replacing floats, allowing us to write fewer and cleaner HTML and CSS code.
-
--->
-
-<!-- Flexbox Terminology
-  display: flex
-  The element on which we want to use flexbox is called the flex container. 
-  All we have to do in order to create a flex container is to set its display property to flex.
-  If we do this, then all of the direct children of that flex container become flex items.
-  The direction in which these items are laid out is called the main axis.
-  Then the other perpendicular axis is called the cross axis.
-
--->
