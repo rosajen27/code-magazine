@@ -1,5 +1,6 @@
 .el--1 {
   background-color: blueviolet;
+  align-self: flex-start;
 }
 .el--2 {
   background-color: orangered;
@@ -13,9 +14,11 @@
 }
 .el--5 {
   background-color: palevioletred;
+  align-self: stretch;
 }
 .el--6 {
   background-color: steelblue;
+  order: -1;
 }
 .el--7 {
   background-color: yellow;
@@ -27,6 +30,28 @@
 .container {
   font-family: sans-serif;
   background-color: #ddd;
-  font-size: 40px;
+  font-size: 34px;
   margin: 40px;
+
+  /* FLEXBOX */
+  display: flex;
+
+  /* vertically align items */
+  align-items: center;
+  /*horizontally align items */
+  justify-content: center;
+
+  /* manually space elements */
+  gap: 30px;
+
+  /* evenly space elements*/
+  /* justify-content: space-between; */
+
+
+  /* position elements at the top or bottom */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+
+  /* stretch as tall as the tallest element */
+  /* align-items: stretch; */
 }
