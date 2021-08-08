@@ -8,6 +8,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+
   /* button element positioned relative to body */
   position: relative;
 }
@@ -211,7 +212,7 @@ nav {
   clear: both;
 }
 
-.clarfix::after {
+.clearfix::after {
   clear: both;
   content: "";
   display: block;
