@@ -6,7 +6,7 @@ A fictitious Code Magazine article. The purpose of this project was to build the
 ## Deployment
 
 * Floats Layout: https://rosajen27.github.io/code-magazine/index.html
-* Flexbox-Layout: https://rosajen27.github.io/code-magazine/flex-box.html
+* Flexbox-Layout: https://rosajen27.github.io/code-magazine/flexbox.html
 * CSS Grid Layout: https://rosajen27.github.io/code-magazine/css-grid.html
 
 
