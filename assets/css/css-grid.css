@@ -188,6 +188,8 @@ a:hover {
   text-decoration: underline orangered;
 }
 
+
+
 /* FLEXBOX - Smaller Components*/
 .main-header {
   display: flex;
@@ -228,11 +230,13 @@ a:hover {
   font-style: italic;
 }
 
+
+
 /* CSS GRID */
 .container {
   display: grid;
   grid-template-columns: 1fr 300px;
-  
+
   column-gap: 75px;
   row-gap: 60px;
 
@@ -244,11 +248,13 @@ a:hover {
   grid-column: 1 / span 2;
 }
 
-article {}
+article {
+}
 
-aside {}
+aside {
+}
 
 footer {
-    /*span all the way across */
-    grid-column: 1 / span 2;
+  /*span all the way across */
+  grid-column: 1 / span 2;
 }

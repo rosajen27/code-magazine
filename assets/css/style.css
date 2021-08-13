@@ -205,7 +205,8 @@ a:hover {
   text-decoration: underline orangered;
 }
 
-/* FLOAT LAYOUT */
+
+/* FLOATS LAYOUT */
 .author-img {
   float: left;
   margin-bottom: 20px;
