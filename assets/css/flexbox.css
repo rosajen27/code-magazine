@@ -222,6 +222,7 @@ a:hover {
   display: block;
 }
 
+/* FLEX BOX LAYOUT */
 .row {
   display: flex;
   /* vertically occupies only the space necessary, instead of stretching */
