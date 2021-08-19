@@ -1,6 +1,6 @@
 # 📰 Code Magazine
 
-A fictitious Code Magazine article. The purpose of this project was to build the same webpage using 3 layouts: Floats, Flex-box, and CSS Grid.
+A fictitious Code Magazine article webpage. The purpose of this project was to build the same webpage using 3 layouts: Floats, Flex-box, and CSS Grid.
 
 
 ## Deployment
